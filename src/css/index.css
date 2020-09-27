@@ -1,0 +1,80 @@
+body {
+	font: 14px "Century Gothic", Futura, sans-serif;
+	margin: 20px;
+}
+
+.box{
+	background: #f7f7f7;
+	width: 70%;
+	max-width: 700px;
+	padding: 20px;
+	text-align: center;
+	margin: 5% auto;
+	box-shadow: -4px 5px 15px 0px rgba(0,0,0,0.4);
+	border-radius: 8px;
+}
+
+.fieldBox{
+	width: 80%;
+	margin: auto auto;
+}
+
+.fieldBox label{
+	font-weight: bold;
+	
+}
+
+.fieldBox button{
+	background-color: #363535;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  font-weight: bold;
+  box-shadow: -4px 5px 15px 0px rgba(0,0,0,0.4);
+  border-radius: 8px;
+}
+
+
+a {
+	background-color: #363535;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  font-weight: bold;
+  box-shadow: -4px 5px 15px 0px rgba(0,0,0,0.4);
+  border-radius: 8px;
+}
+
+.inputFields{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 12px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	box-shadow: -4px 5px 15px 0px rgba(0,0,0,0.4);
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
