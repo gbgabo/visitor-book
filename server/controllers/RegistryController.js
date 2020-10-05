@@ -5,7 +5,7 @@ const Registry = mongoose.model("Registry");
 module.exports = {
   async index(req, res) {
     const { page = 1 } = req.query;
-    const registries  = await Registry.paginate({}, { page, limit: 10 });
+    const registries  = await Registry.paginate({}, { page, limit: 30 });
 
     return res.json(registries);
   },
