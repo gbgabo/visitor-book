@@ -1,16 +1,24 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Dependencies
+- mongodb
+
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
-Runs the app in the development mode.<br />
+Runs the react app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+### `npm run start-dev-server`
+
+Runs the server-side app on node.js.
+The app listens to api calls through [http://localhost:3001/api](http://localhost:3001/api)
 
 ### `yarn test`
 
