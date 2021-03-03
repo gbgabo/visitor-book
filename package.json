@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "concurrently": "^6.0.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongodb": "^3.6.3",
@@ -18,11 +19,12 @@
     "require-dir": "^1.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "client": "react-scripts start",
+    "server": "nodemon server/index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start-dev-server": "nodemon server/index.js"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,5 +43,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "proxy": "http://localhost:5000"
 }

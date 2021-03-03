@@ -15,7 +15,7 @@ export default function Form(){
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: email })
     };
-    await fetch('http://localhost:3001/api/register', requestOptions)
+    await fetch('/api/register', requestOptions)
         .then(response => response.json())
   }
 

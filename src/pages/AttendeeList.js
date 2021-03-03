@@ -8,7 +8,7 @@ export default function AttendeeList() {
   const [finished, setFinished] = useState(false);
 
   const totalPages = async () => {
-    const response = await fetch(`http://gabo.link:3001/api/registries?page=1`);
+    const response = await fetch(`/api/registries?page=1`);
     const data = await response.json();
     return data.pages
   }
@@ -30,7 +30,7 @@ export default function AttendeeList() {
       if (page > totalPages){
         setFinished(true);
       } else {
-        const response = await fetch(`http://gabo.link:3001/api/registries?page=${page}`);
+        const response = await fetch(`/api/registries?page=${page}`);
         const data = await response.json();
         setRegistries(prev => [...prev, ...data.docs]);
       }
